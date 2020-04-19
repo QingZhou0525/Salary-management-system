@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="gongziDataSet19" targetNamespace="http://tempuri.org/gongziDataSet19.xsd" xmlns:mstns="http://tempuri.org/gongziDataSet19.xsd" xmlns="http://tempuri.org/gongziDataSet19.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="gongziConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="gongziConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.工资管理系统.Properties.Settings.GlobalReference.Default.gongziConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="考勤表TableAdapter" GeneratorDataComponentClassName="考勤表TableAdapter" Name="考勤表" UserDataComponentName="考勤表TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="gongziConnectionString (Settings)" DbObjectName="gongzi.dbo.考勤表" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT 时间 FROM dbo.考勤表</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="时间" DataSetColumn="时间" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="gongziDataSet19" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="gongziDataSet19" msprop:Generator_UserDSName="gongziDataSet19">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="考勤表" msprop:Generator_TableClassName="考勤表DataTable" msprop:Generator_TableVarName="table考勤表" msprop:Generator_TablePropName="考勤表" msprop:Generator_RowDeletingName="考勤表RowDeleting" msprop:Generator_UserTableName="考勤表" msprop:Generator_RowChangingName="考勤表RowChanging" msprop:Generator_RowEvHandlerName="考勤表RowChangeEventHandler" msprop:Generator_RowDeletedName="考勤表RowDeleted" msprop:Generator_RowEvArgName="考勤表RowChangeEvent" msprop:Generator_RowChangedName="考勤表RowChanged" msprop:Generator_RowClassName="考勤表Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="时间" msprop:Generator_ColumnVarNameInTable="column时间" msprop:Generator_ColumnPropNameInRow="时间" msprop:Generator_ColumnPropNameInTable="时间Column" msprop:Generator_UserColumnName="时间">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
