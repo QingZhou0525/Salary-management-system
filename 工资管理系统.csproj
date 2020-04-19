@@ -1,0 +1,686 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{93126537-6932-4D48-92B5-504B7F8E18B2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>工资管理系统</RootNamespace>
+    <AssemblyName>工资管理系统</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Administrator\Desktop\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>A1FAB6184D2DCB266B834100A894D7A7A17342CD</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>工资管理系统_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data.cs" />
+    <Compile Include="gongziDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gongziDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="gongziDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gongziDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="gongziDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gongziDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="gongziDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gongziDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="gongziDataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gongziDataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="gongziDataSet14.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gongziDataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="gongziDataSet15.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gongziDataSet15.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="gongziDataSet16.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gongziDataSet16.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="gongziDataSet17.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gongziDataSet17.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="gongziDataSet18.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gongziDataSet18.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="gongziDataSet19.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gongziDataSet19.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="gongziDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gongziDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="gongziDataSet20.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gongziDataSet20.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="gongziDataSet21.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gongziDataSet21.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="gongziDataSet22.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gongziDataSet22.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="gongziDataSet23.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gongziDataSet23.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="gongziDataSet24.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gongziDataSet24.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="gongziDataSet25.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gongziDataSet25.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="gongziDataSet26.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gongziDataSet26.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="gongziDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gongziDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="gongziDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gongziDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="gongziDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gongziDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="gongziDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gongziDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="gongziDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gongziDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="gongziDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gongziDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="gongziDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gongziDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="修改密码.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="修改密码.Designer.cs">
+      <DependentUpon>修改密码.cs</DependentUpon>
+    </Compile>
+    <Compile Include="历史考勤.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="历史考勤.Designer.cs">
+      <DependentUpon>历史考勤.cs</DependentUpon>
+    </Compile>
+    <Compile Include="工资查询.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="工资查询.Designer.cs">
+      <DependentUpon>工资查询.cs</DependentUpon>
+    </Compile>
+    <Compile Include="工资计算.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="工资计算.Designer.cs">
+      <DependentUpon>工资计算.cs</DependentUpon>
+    </Compile>
+    <Compile Include="打印员工信息预览.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="打印员工信息预览.Designer.cs">
+      <DependentUpon>打印员工信息预览.cs</DependentUpon>
+    </Compile>
+    <Compile Include="打印工资条预览.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="打印工资条预览.Designer.cs">
+      <DependentUpon>打印工资条预览.cs</DependentUpon>
+    </Compile>
+    <Compile Include="本月考勤.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="本月考勤.Designer.cs">
+      <DependentUpon>本月考勤.cs</DependentUpon>
+    </Compile>
+    <Compile Include="标准工资管理.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="标准工资管理.Designer.cs">
+      <DependentUpon>标准工资管理.cs</DependentUpon>
+    </Compile>
+    <Compile Include="登录界面.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="登录界面.Designer.cs">
+      <DependentUpon>登录界面.cs</DependentUpon>
+    </Compile>
+    <Compile Include="管理员登录界面.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="管理员登录界面.Designer.cs">
+      <DependentUpon>管理员登录界面.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="添加员工信息.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="添加员工信息.Designer.cs">
+      <DependentUpon>添加员工信息.cs</DependentUpon>
+    </Compile>
+    <Compile Include="修改员工信息.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="修改员工信息.Designer.cs">
+      <DependentUpon>修改员工信息.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gongziDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gongziDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="修改密码.resx">
+      <DependentUpon>修改密码.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="历史考勤.resx">
+      <DependentUpon>历史考勤.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="工资查询.resx">
+      <DependentUpon>工资查询.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="工资计算.resx">
+      <DependentUpon>工资计算.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="打印员工信息预览.resx">
+      <DependentUpon>打印员工信息预览.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="打印工资条预览.resx">
+      <DependentUpon>打印工资条预览.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="本月考勤.resx">
+      <DependentUpon>本月考勤.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="标准工资管理.resx">
+      <DependentUpon>标准工资管理.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="登录界面.resx">
+      <DependentUpon>登录界面.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="管理员登录界面.resx">
+      <DependentUpon>管理员登录界面.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="添加员工信息.resx">
+      <DependentUpon>添加员工信息.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="修改员工信息.resx">
+      <DependentUpon>修改员工信息.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="gongziDataSet.xsc">
+      <DependentUpon>gongziDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="gongziDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gongziDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gongziDataSet.xss">
+      <DependentUpon>gongziDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="gongziDataSet1.xsc">
+      <DependentUpon>gongziDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="gongziDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gongziDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gongziDataSet1.xss">
+      <DependentUpon>gongziDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="gongziDataSet10.xsc">
+      <DependentUpon>gongziDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="gongziDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gongziDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gongziDataSet10.xss">
+      <DependentUpon>gongziDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="gongziDataSet11.xsc">
+      <DependentUpon>gongziDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="gongziDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gongziDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gongziDataSet11.xss">
+      <DependentUpon>gongziDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="gongziDataSet12.xsc">
+      <DependentUpon>gongziDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="gongziDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gongziDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gongziDataSet12.xss">
+      <DependentUpon>gongziDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="gongziDataSet13.xsc">
+      <DependentUpon>gongziDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="gongziDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gongziDataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gongziDataSet13.xss">
+      <DependentUpon>gongziDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="gongziDataSet14.xsc">
+      <DependentUpon>gongziDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="gongziDataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gongziDataSet14.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gongziDataSet14.xss">
+      <DependentUpon>gongziDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="gongziDataSet15.xsc">
+      <DependentUpon>gongziDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="gongziDataSet15.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gongziDataSet15.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gongziDataSet15.xss">
+      <DependentUpon>gongziDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="gongziDataSet16.xsc">
+      <DependentUpon>gongziDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="gongziDataSet16.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gongziDataSet16.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gongziDataSet16.xss">
+      <DependentUpon>gongziDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="gongziDataSet17.xsc">
+      <DependentUpon>gongziDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="gongziDataSet17.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gongziDataSet17.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gongziDataSet17.xss">
+      <DependentUpon>gongziDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="gongziDataSet18.xsc">
+      <DependentUpon>gongziDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="gongziDataSet18.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gongziDataSet18.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gongziDataSet18.xss">
+      <DependentUpon>gongziDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="gongziDataSet19.xsc">
+      <DependentUpon>gongziDataSet19.xsd</DependentUpon>
+    </None>
+    <None Include="gongziDataSet19.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gongziDataSet19.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gongziDataSet19.xss">
+      <DependentUpon>gongziDataSet19.xsd</DependentUpon>
+    </None>
+    <None Include="gongziDataSet2.xsc">
+      <DependentUpon>gongziDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="gongziDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gongziDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gongziDataSet2.xss">
+      <DependentUpon>gongziDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="gongziDataSet20.xsc">
+      <DependentUpon>gongziDataSet20.xsd</DependentUpon>
+    </None>
+    <None Include="gongziDataSet20.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gongziDataSet20.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gongziDataSet20.xss">
+      <DependentUpon>gongziDataSet20.xsd</DependentUpon>
+    </None>
+    <None Include="gongziDataSet21.xsc">
+      <DependentUpon>gongziDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="gongziDataSet21.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gongziDataSet21.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gongziDataSet21.xss">
+      <DependentUpon>gongziDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="gongziDataSet22.xsc">
+      <DependentUpon>gongziDataSet22.xsd</DependentUpon>
+    </None>
+    <None Include="gongziDataSet22.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gongziDataSet22.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gongziDataSet22.xss">
+      <DependentUpon>gongziDataSet22.xsd</DependentUpon>
+    </None>
+    <None Include="gongziDataSet23.xsc">
+      <DependentUpon>gongziDataSet23.xsd</DependentUpon>
+    </None>
+    <None Include="gongziDataSet23.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gongziDataSet23.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gongziDataSet23.xss">
+      <DependentUpon>gongziDataSet23.xsd</DependentUpon>
+    </None>
+    <None Include="gongziDataSet24.xsc">
+      <DependentUpon>gongziDataSet24.xsd</DependentUpon>
+    </None>
+    <None Include="gongziDataSet24.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gongziDataSet24.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gongziDataSet24.xss">
+      <DependentUpon>gongziDataSet24.xsd</DependentUpon>
+    </None>
+    <None Include="gongziDataSet25.xsc">
+      <DependentUpon>gongziDataSet25.xsd</DependentUpon>
+    </None>
+    <None Include="gongziDataSet25.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gongziDataSet25.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gongziDataSet25.xss">
+      <DependentUpon>gongziDataSet25.xsd</DependentUpon>
+    </None>
+    <None Include="gongziDataSet26.xsc">
+      <DependentUpon>gongziDataSet26.xsd</DependentUpon>
+    </None>
+    <None Include="gongziDataSet26.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gongziDataSet26.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gongziDataSet26.xss">
+      <DependentUpon>gongziDataSet26.xsd</DependentUpon>
+    </None>
+    <None Include="gongziDataSet3.xsc">
+      <DependentUpon>gongziDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="gongziDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gongziDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gongziDataSet3.xss">
+      <DependentUpon>gongziDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="gongziDataSet4.xsc">
+      <DependentUpon>gongziDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="gongziDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gongziDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gongziDataSet4.xss">
+      <DependentUpon>gongziDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="gongziDataSet5.xsc">
+      <DependentUpon>gongziDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="gongziDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gongziDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gongziDataSet5.xss">
+      <DependentUpon>gongziDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="gongziDataSet6.xsc">
+      <DependentUpon>gongziDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="gongziDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gongziDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gongziDataSet6.xss">
+      <DependentUpon>gongziDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="gongziDataSet7.xsc">
+      <DependentUpon>gongziDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="gongziDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gongziDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gongziDataSet7.xss">
+      <DependentUpon>gongziDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="gongziDataSet8.xsc">
+      <DependentUpon>gongziDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="gongziDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gongziDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gongziDataSet8.xss">
+      <DependentUpon>gongziDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="gongziDataSet9.xsc">
+      <DependentUpon>gongziDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="gongziDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gongziDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gongziDataSet9.xss">
+      <DependentUpon>gongziDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="工资管理系统_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
